@@ -39,10 +39,13 @@
 - Apply DRY Principle (DON'T Repeat Yourself).
 - Apply align inside methods for better readability
    ```
-        $status             = ApInstitutionStatusEnum::values();
-        $httpMethods        = HttpMethodsEnum::values();
-        $apApiTypes         = ApApiTypes::values();
-        $commissionTypes    = CommissionTypeEnum::values();
-        $fieldsNames        = getKycFields(withoutApisFields: false);
+       public function handleSomething()
+       {
+            $status             = ApInstitutionStatusEnum::values();
+            $httpMethods        = HttpMethodsEnum::values();
+            $apApiTypes         = ApApiTypes::values();
+            $commissionTypes    = CommissionTypeEnum::values();
+            $fieldsNames        = getKycFields(withoutApisFields: false);
+       }
   ```
   
