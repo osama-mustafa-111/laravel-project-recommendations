@@ -37,4 +37,12 @@
 - Apply database transaction in methods, if the method handle many operations.
 - Handle logging carefully in your methods if error may occur.
 - Apply DRY Principle (DON'T Repeat Yourself).
+- Apply align inside methods for better readability
+   ```
+        $status             = ApInstitutionStatusEnum::values();
+        $httpMethods        = HttpMethodsEnum::values();
+        $apApiTypes         = ApApiTypes::values();
+        $commissionTypes    = CommissionTypeEnum::values();
+        $fieldsNames        = getKycFields(withoutApisFields: false);
+  ```
   
