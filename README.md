@@ -77,5 +77,15 @@
    ```
         @closefund($fund)
    ```
-
+- Avoid using magic numbers or hard coded values in your code, & use Const or Enum Value
+  - Example for magic number:
+    ```
+        $chart[str()->limit($fund->name, 22)] = $this->charts($fund->id);
+    ```
+  - Best Practice
+    ```
+        const FUND_NAME_LIMIT = 22;
+        $chart[str()->limit($fund->name, self::FUND_NAME_LIMIT)] = $this->charts($fund->id);
+    ```
+    
   
