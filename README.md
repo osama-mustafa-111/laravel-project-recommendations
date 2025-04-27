@@ -67,5 +67,15 @@
    - When handling external services or APIs
    - Database transactions
    - Custom error handling
+- Avoid repeating if conditions in blade file and use custom blade directive
+   ```
+        Blade::if('closefund', function ($fund) {
+            return $fund['type_of_investments'] === 'public_close_ended';
+        });
+
+    ```
+   ```
+        @closefund($fund)
+   ```
 
   
