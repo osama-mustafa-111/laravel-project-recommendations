@@ -38,7 +38,12 @@
 - Handle logging carefully in your methods if error may occur.
 - Apply DRY Principle (DON'T Repeat Yourself).
 - Keep functions and methods small as possiple.
-- Extract complex validation into FormRequest 
+- Extract complex validation into FormRequest.
+- Use Named Parameters in PHP 8.0 when calling function for readability and flexibility.
+- Handle three files for .env
+  - ``` .env.dev ```
+  - ``` .env.beta ```
+  - ``` .env.production ```  
 - Align variables inside methods by the equal sign ```(=)``` to improve readability and maintain consistent structure.
 
    ```
@@ -62,4 +67,5 @@
    - When handling external services or APIs
    - Database transactions
    - Custom error handling
+
   
