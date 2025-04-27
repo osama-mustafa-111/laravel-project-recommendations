@@ -49,4 +49,5 @@
             $fieldsNames        = getKycFields(withoutApisFields: false);
        }
   ```
+- Keep functions and methods small as possiple
   
