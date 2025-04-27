@@ -40,7 +40,7 @@
 - Keep functions and methods small as possiple.
 - Extract complex validation into FormRequest.
 - Use Named Parameters in PHP 8.0 when calling function for readability and flexibility.
-- Handle three files for .env
+- Handle three files for .env in your project.
   - ``` .env.dev ```
   - ``` .env.beta ```
   - ``` .env.production ```  
