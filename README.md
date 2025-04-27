@@ -37,7 +37,8 @@
 - Apply database transaction in methods, if the method handle many operations.
 - Handle logging carefully in your methods if error may occur.
 - Apply DRY Principle (DON'T Repeat Yourself).
-- Apply align inside methods for better readability
+- Align variables inside methods by the equal sign (=) to improve readability and maintain consistent structure.
+
    ```
        public function handleSomething()
        {
