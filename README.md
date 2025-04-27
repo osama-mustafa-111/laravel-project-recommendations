@@ -57,7 +57,9 @@
          if ($user->kyc?->status == UserKycStatusEnum::NEED_TO_UPDATE) {
                 $user->kyc->status = UserKycStatusEnum::PENDING;
             }
-
    ```
-
+- Use ```Try-Catch``` block in cases like:
+   - When handling external services or APIs
+   - Database transactions
+   - Custom error handling
   
