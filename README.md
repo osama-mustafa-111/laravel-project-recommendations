@@ -37,6 +37,8 @@
 - Apply database transaction in methods, if the method handle many operations.
 - Handle logging carefully in your methods if error may occur.
 - Apply DRY Principle (DON'T Repeat Yourself).
+- Keep functions and methods small as possiple.
+- Extract complex validation into FormRequest 
 - Align variables inside methods by the equal sign ```(=)``` to improve readability and maintain consistent structure.
 
    ```
@@ -49,7 +51,6 @@
             $fieldsNames        = getKycFields(withoutApisFields: false);
        }
   ```
-- Keep functions and methods small as possiple
 - Use Null-Safe Operator ```(?->)``` to access properties safely
 
   ```
