@@ -24,7 +24,16 @@
 |----------|----------|----------|----------|
 | Variable   | camelCase      | $userDetails        | ~~$user_details~~   |
 | method     | camelCase      | generatePDF         | ~~generate_PDF~~    |
-| Model     | Singular      | User                  | ~~UsersF~~    |
+| Model     | Singular      | User                  | ~~Users~~    |
 
 
-
+# Refactoring Tips
+- Remove commented (unnecessary code) from methods
+- Apply Single Responsiblity Principle in classes (controllers, models, etc.)
+- Extract private functions from controllers in trait or service if used in many classes
+- Apply naming conventions correctly throught the project from the table above
+- Apply meaningful names for functions & methods
+- DON'T write comment to explain your code if the code is clear & self-explantory
+- Apply database transaction in methods, if the method handle many operations
+- Handle logging carefully in your methods if error may occur
+  
