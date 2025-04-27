@@ -50,4 +50,13 @@
        }
   ```
 - Keep functions and methods small as possiple
+- Use Null-Safe Operator ```(?->)``` to access properties safely
+
+  ```
+         if ($user->kyc?->status == UserKycStatusEnum::NEED_TO_UPDATE) {
+                $user->kyc->status = UserKycStatusEnum::PENDING;
+              }
+
+   ```
+
   
