@@ -55,7 +55,7 @@
   ```
          if ($user->kyc?->status == UserKycStatusEnum::NEED_TO_UPDATE) {
                 $user->kyc->status = UserKycStatusEnum::PENDING;
-              }
+            }
 
    ```
 
