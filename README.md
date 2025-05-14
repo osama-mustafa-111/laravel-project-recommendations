@@ -62,6 +62,17 @@
     $variable = $foo ? 'foo' : 'bar';
     ```
 
+- Take care of isset() vs !empty()
+  ✅ isset() is faster, but less strict It allows ```''```, ```0```, ```false```, ```'0'```, ```[]```, etc.
+  ✅ !empty() is stricter, It returns false for: ```''``` (empty string), ```0```, ```null```, ```[]```, ```false```
+
+It allows '', 0, false, '0', [], etc.
+
+php
+Copy
+Edit
+
+
 # Refactoring Tips
 - Apply naming conventions correctly throughthout the project from the table above.
 - Remove commented (unnecessary code) from methods.
