@@ -26,6 +26,27 @@
 | method     | camelCase      | generatePDF         | ~~generate_PDF~~    |
 | Model     | Singular      | User                  | ~~Users~~    |
 
+# Coding Standards
+- Keep spaces in ```if``` statements like the follwoing ```[PSR-12: Extended Coding Style] ```
+  ```
+      if ($expr1) {
+        // if body
+      } elseif ($expr2) {
+        // elseif body
+      } else {
+        // else body;
+      }
+
+  ```
+- A ```for``` statement looks like the following. Note the placement of parentheses, spaces, and braces ```[PSR-12: Extended Coding Style] ```.
+  ```
+  <?php
+
+    for ($i = 0; $i < 10; $i++) {
+        // for body
+    }
+
+  ```
 
 # Refactoring Tips
 - Apply naming conventions correctly throughthout the project from the table above.
@@ -87,16 +108,7 @@
         const FUND_NAME_LIMIT = 22;
         $chart[str()->limit($fund->name, self::FUND_NAME_LIMIT)] = $this->charts($fund->id);
     ```
-- Keep spaces in ```if``` statements like the follwoing ```[PSR-12: Extended Coding Style] ```
-  ```
-      if ($expr1) {
-        // if body
-      } elseif ($expr2) {
-        // elseif body
-      } else {
-        // else body;
-      }
 
-  ```
+
     
   
