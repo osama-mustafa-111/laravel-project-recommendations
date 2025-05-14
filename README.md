@@ -87,5 +87,16 @@
         const FUND_NAME_LIMIT = 22;
         $chart[str()->limit($fund->name, self::FUND_NAME_LIMIT)] = $this->charts($fund->id);
     ```
+- Keep spaces in ```if``` statements like the follwoing ```[PSR-12: Extended Coding Style] ```
+  ```
+      if ($expr1) {
+        // if body
+      } elseif ($expr2) {
+        // elseif body
+      } else {
+        // else body;
+      }
+
+  ```
     
   
