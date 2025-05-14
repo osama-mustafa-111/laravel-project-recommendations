@@ -47,6 +47,17 @@
     }
 
   ```
+- Each individual trait that is imported into a class MUST be included one-per-line and each inclusion MUST have its own use import statement.
+
+    ```
+    class ClassName
+    {
+        use FirstTrait;
+        use SecondTrait;
+        use ThirdTrait;
+    }
+    
+    ```
 
 # Refactoring Tips
 - Apply naming conventions correctly throughthout the project from the table above.
