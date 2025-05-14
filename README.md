@@ -56,7 +56,10 @@
         use SecondTrait;
         use ThirdTrait;
     }
-    
+    ```
+  - Ternary operator must have at least one space around ```?``` and ```:``` characters
+    ```
+    $variable = $foo ? 'foo' : 'bar';
     ```
 
 # Refactoring Tips
