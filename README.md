@@ -57,7 +57,7 @@
         use ThirdTrait;
     }
     ```
-  - Ternary operator must have at least one space around ```?``` and ```:``` characters
+- Ternary operator must have at least one space around ```?``` and ```:``` characters ```[PSR-12: Extended Coding Style]```
     ```
     $variable = $foo ? 'foo' : 'bar';
     ```
