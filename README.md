@@ -27,7 +27,7 @@
 | Model     | Singular      | User                  | ~~Users~~    |
 
 # Coding Standards
-- Keep spaces in ```if``` statements like the follwoing ```[PSR-12: Extended Coding Style] ```
+- Keep spaces in ```if``` statements like the follwoing ```[PSR-12: Extended Coding Style]```
   ```
       if ($expr1) {
         // if body
@@ -38,7 +38,7 @@
       }
 
   ```
-- A ```for``` statement looks like the following. Note the placement of parentheses, spaces, and braces ```[PSR-12: Extended Coding Style] ```.
+- A ```for``` statement looks like the following. Note the placement of parentheses, spaces, and braces ```[PSR-12: Extended Coding Style]```.
   ```
   <?php
 
