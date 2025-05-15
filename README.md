@@ -134,11 +134,11 @@
   - ✅ Good:
   ```
     Log::error('Payment failed', [
-    'user_id'    => $user->id,
-    'amount'     => $paymentAmount,
-    'request_id' => request()->header('X-Request-ID'),
-    'input'      => $request->except(['password']), // avoid sensitive info
-    'ip'         => request()->ip(),
+        'user_id'    => $user->id,
+        'amount'     => $paymentAmount,
+        'request_id' => request()->header('X-Request-ID'),
+        'input'      => $request->except(['password']), // avoid sensitive info
+        'ip'         => request()->ip(),
     ]);
   ```
 
