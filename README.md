@@ -129,6 +129,18 @@
 - Take care of ```isset()``` vs ```!empty()```
   - ```isset()``` is faster, but less strict It allows ```''```, ```0```, ```false```, ```'0'```, ```[]```, etc.
   - ```!empty()``` is stricter, It returns false for: ```''``` (empty string), ```0```, ```null```, ```[]```, ```false```
+- Use ```Log``` context effectively for better debugging
+  - ❌ Bad: ```Log::error('Payment failed');```
+  - ✅ Good:
+        ```
+            Log::error('Payment failed', [
+                'user_id'    => $user->id,
+                'amount'     => $paymentAmount,
+                'request_id' => request()->header('X-Request-ID'),
+                'input'      => $request->except(['password']), // avoid sensitive info
+                'ip'         => request()->ip(),
+            ]);
+        ```
 
 
 
