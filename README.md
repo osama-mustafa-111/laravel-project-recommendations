@@ -61,12 +61,7 @@
     ```
     $variable = $foo ? 'foo' : 'bar';
     ```
-
-- Take care of ```isset()``` vs ```!empty()```
-  - ```isset()``` is faster, but less strict It allows ```''```, ```0```, ```false```, ```'0'```, ```[]```, etc.
-  - ```!empty()``` is stricter, It returns false for: ```''``` (empty string), ```0```, ```null```, ```[]```, ```false```
-
-
+    
 # Refactoring Tips
 - 💡 Always leave the code better than you found it. :)
 - Apply naming conventions correctly throughthout the project from the table above.
@@ -131,6 +126,11 @@
 - Prefer null coalescing (```??```) over verbose ternary checks for defaults
    - ❌ Before: ```$limit = isset($request->limit) ? $request->limit : 20;```
    - ✅ After: ```$limit = $request->limit ?? 20;```
+- Take care of ```isset()``` vs ```!empty()```
+  - ```isset()``` is faster, but less strict It allows ```''```, ```0```, ```false```, ```'0'```, ```[]```, etc.
+  - ```!empty()``` is stricter, It returns false for: ```''``` (empty string), ```0```, ```null```, ```[]```, ```false```
+
+
 
 
 
