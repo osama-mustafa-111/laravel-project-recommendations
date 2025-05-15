@@ -47,7 +47,7 @@
     }
 
   ```
-- Each individual trait that is imported into a class MUST be included one-per-line and each inclusion MUST have its own use import statement.
+- Each individual trait that is imported into a class MUST be included one-per-line and each inclusion MUST have its own use import statement ```[PSR-12: Extended Coding Style]```.
 
     ```
     class ClassName
