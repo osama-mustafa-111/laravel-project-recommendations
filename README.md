@@ -68,6 +68,7 @@
 
 
 # Refactoring Tips
+- 💡 Always leave the code better than you found it. :)
 - Apply naming conventions correctly throughthout the project from the table above.
 - Remove commented (unnecessary code) from methods.
 - Apply Single Responsiblity Principle in classes (controllers, models, etc.) & methods.
