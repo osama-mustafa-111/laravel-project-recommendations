@@ -128,6 +128,11 @@
         const FUND_NAME_LIMIT = 22;
         $chart[str()->limit($fund->name, self::FUND_NAME_LIMIT)] = $this->charts($fund->id);
     ```
+- Prefer null coalescing (??) over verbose ternary checks for defaults
+   - ❌ Before: ```$limit = isset($request->limit) ? $request->limit : 20;```
+   - ✅ After: ```$limit = $request->limit ?? 20;```
+
+
 
 
     
