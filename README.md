@@ -141,6 +141,20 @@
         'ip'         => request()->ip(),
     ]);
   ```
+  - Try to specify the line and file when catch exception
+    ```
+        try {
+            // Logic here
+    
+        } catch (Exception $e) {
+            Log::error('Failed to handle logic', [
+                'Error' => $e->getMessage(),
+                'File'  => $e->getFile(),
+                'Line'  => $e->getLine(),
+            ]);
+        }
+
+    ```
 
 
 
