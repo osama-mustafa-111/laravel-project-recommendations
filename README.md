@@ -141,7 +141,7 @@
         'ip'         => request()->ip(),
     ]);
   ```
-  - Try to specify the line and file when catch exception
+- Try to specify the line and file when catch exception
     ```
         try {
             // Logic here
