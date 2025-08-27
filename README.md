@@ -61,6 +61,21 @@
     ```
     $variable = $foo ? 'foo' : 'bar';
     ```
+
+# Warning Tips
+- ⚠️ Avoid running queries or heavy logic inside Laravel Resource files; they should only format and present data. Related data should be fetched in controllers or models.
+- Avoid using magic numbers or hard coded values in your code, & use Const or Enum Value
+  - Example for magic number:
+    ```
+        $chart[str()->limit($fund->name, 22)] = $this->charts($fund->id);
+    ```
+  - Best Practice
+    ```
+        const FUND_NAME_LIMIT = 22;
+        $chart[str()->limit($fund->name, self::FUND_NAME_LIMIT)] = $this->charts($fund->id);
+    ```
+
+
     
 # Refactoring Tips
 - 💡 Always leave the code better than you found it. :)
@@ -113,16 +128,6 @@
    ```
         @closefund($fund)
    ```
-- Avoid using magic numbers or hard coded values in your code, & use Const or Enum Value
-  - Example for magic number:
-    ```
-        $chart[str()->limit($fund->name, 22)] = $this->charts($fund->id);
-    ```
-  - Best Practice
-    ```
-        const FUND_NAME_LIMIT = 22;
-        $chart[str()->limit($fund->name, self::FUND_NAME_LIMIT)] = $this->charts($fund->id);
-    ```
 - Prefer null coalescing (```??```) over verbose ternary checks for defaults
    - ❌ Before: ```$limit = isset($request->limit) ? $request->limit : 20;```
    - ✅ After: ```$limit = $request->limit ?? 20;```
