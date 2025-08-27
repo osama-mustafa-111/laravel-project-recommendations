@@ -62,8 +62,8 @@
     $variable = $foo ? 'foo' : 'bar';
     ```
 
-# Warning Tips
-- ⚠️ Avoid running queries or heavy logic inside Laravel Resource files; they should only format and present data. Related data should be fetched in controllers or models.
+# ⚠️ Warning Tips
+-  Avoid running queries or heavy logic inside Laravel Resource files; they should only format and present data. Related data should be fetched in controllers or models.
 - Avoid using magic numbers or hard coded values in your code, & use Const or Enum Value
   - Example for magic number:
     ```
